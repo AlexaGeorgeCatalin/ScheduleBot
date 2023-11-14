@@ -1,0 +1,92 @@
+DROP TABLE feedback CASCADE CONSTRAINTS;
+DROP TABLE schedule CASCADE CONSTRAINTS;
+
+CREATE TABLE feedback (
+  author VARCHAR2(255) NOT NULL,
+  content VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE schedule (
+  group_name VARCHAR2(255) NOT NULL,
+  day_name VARCHAR2(255) NOT NULL,
+  class_name VARCHAR2(255) NOT NULL,
+  class_type VARCHAR2(255) NOT NULL,
+  hour_interval VARCHAR2(255) NOT NULL
+);
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Luni','CC','Laborator','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Luni','PPIPO','Seminar','08:00-11:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Luni','MCE','Seminar','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Luni','PJ','Laborator','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Luni','PCPDIT','Curs','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Luni','GPCGC','Laborator','14:00-16:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Luni','FPCGC','Curs','16:00-18:00');
+
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Marti','PBR','Curs','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Marti','TPPM','Laborator','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Marti','CC','Curs','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Marti','PCPDIT','Seminar','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Marti','CN','Curs','14:00-16:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Marti','TPPM','Curs','18:00-20:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Miercuri','PBR','Laborator','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Miercuri','SCA','Laborator','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Miercuri','SCA','Curs','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Miercuri','HCI','Curs','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Miercuri','ARMS','Laborator','14:00-16:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Miercuri','IIOT','Laborator','16:00-18:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Miercuri','HCI','Laborator','16:00-20:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Joi','RPA','Curs','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Joi','RPA','Laborator','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Joi','MCE','Curs','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Joi','ISSA','Laborator','16:00-18:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Joi','PC','Curs','16:00-20:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Joi','PJ','Curs','16:00-18:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Joi','ISSA','Curs','18:00-20:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Vineri','ACTN','Curs','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Vineri','ACTN','Laborator','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Vineri','IIOT','Curs','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Vineri','ARMS','Curs','12:00-14:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3A5','Sambata','CN','Laborator','08:00-10:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Luni','CC','Laborator','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Luni','MCE','Seminar','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Luni','PCPDIT','Curs','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Luni','SCA','Laborator','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Luni','FPCGC','Curs','16:00-18:00');
+
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','PBR','Curs','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','CC','Curs','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','PBR','Laborator','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','RPA','Laborator','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','GPCGC','Laborator','14:00-16:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','PCPDIT','Seminar','14:00-16:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','HCI','Laborator','16:00-18:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Marti','TPPM','Curs','18:00-20:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Miercuri','SCA','Curs','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Miercuri','HCI','Curs','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Miercuri','IIOT','Laborator','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Miercuri','CN','Curs','14:00-16:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Miercuri','CN','Laborator','16:00-18:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Miercuri','ISSA','Laborator','18:00-20:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','PPIPO','Seminar','08:00-11:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','RPA','Curs','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','MCE','Curs','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','PC','Curs','16:00-20:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','PJ','Curs','16:00-18:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','TPPM','Laborator','16:00-18:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','ISSA','Curs','18:00-20:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Joi','PJ','Laborator','18:00-20:00');
+
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Vineri','ACTN','Curs','08:00-10:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Vineri','IIOT','Curs','10:00-12:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Vineri','ARMS','Curs','12:00-14:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Vineri','ARMS','Laborator','14:00-16:00');
+INSERT INTO schedule (group_name,day_name,class_name,class_type,hour_interval)VALUES('3B5','Vineri','ACTN','Laborator','18:00-20:00');
