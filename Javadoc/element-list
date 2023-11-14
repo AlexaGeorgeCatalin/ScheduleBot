@@ -1,0 +1,6 @@
+org.example
+org.example.Commands
+org.example.DatabaseDAO
+org.example.RSS
+org.example.StructureCalculator
+org.example.Utils
