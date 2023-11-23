@@ -14,7 +14,7 @@ public class ScheduleBot{
      */
     public static void main(String[] args) throws LoginException {
 
-        String botToken = "MTExMTY1MzU0MjM2OTk1MTc3NA.G61vLI.E2PqsQQvx9iqrMQWIsHMKE2dz2XJbytA3RmLk4";
+        String botToken = "";//insert discord token here
 
         JDABuilder.createDefault(botToken)
                 .addEventListeners(new BotListeners())
